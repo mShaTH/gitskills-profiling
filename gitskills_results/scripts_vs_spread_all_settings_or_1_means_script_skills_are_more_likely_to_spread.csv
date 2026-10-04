@@ -1,0 +1,7 @@
+setting,n_no_scripts,n_scripts,pct_2plus_no,pct_2plus_scr,OR_2plus,CI_2plus,p_2plus,pct_10plus_no,pct_10plus_scr,OR_10plus,CI_10plus,p_10plus
+"all repos, all skills (headline, naive)",1661930,214507,16.36,15.78,0.96,0.95-0.97,1.1e-11,1.3,1.99,1.54,1.49-1.59,4.8e-146
+"all repos, nested skills only",1653014,198505,16.44,16.82,1.03,1.02-1.04,1.5e-05,1.31,2.15,1.66,1.60-1.71,3.0e-200
+"MAIN: exclude collection repos (>= 100), nested only",997335,126568,9.16,9.89,1.09,1.07-1.11,2.3e-17,0.7,0.81,1.15,1.08-1.23,3.4e-05
+"sensitivity: exclude repos >= 20, nested only",613976,79606,7.31,7.93,1.09,1.06-1.12,2.8e-10,0.42,0.46,1.08,0.97-1.20,1.7e-01
+"sensitivity: exclude repos >= 1000, nested only",1245414,168409,11.1,12.97,1.19,1.18-1.21,1.4e-114,1.33,1.86,1.41,1.35-1.46,2.7e-68
+sensitivity: MAIN but exact basename SKILL.md only,984758,124052,9.17,9.97,1.1,1.07-1.12,7.7e-20,0.71,0.82,1.16,1.09-1.24,1.0e-05

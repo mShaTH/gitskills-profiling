@@ -1,4 +1,4 @@
-# GitSkills profiling (sample)
+# GitSkills profiling
 
 Exploratory profiling of the GitSkills dataset (agent skills mined from GitHub, MSR 2027 Mining Challenge). This follows the structure of Abram Hindle's CMPUT 660 Assignment 1, adapted to the new dataset. The scripts here were built on the 13,000-skill sample. The full-data rerun is a Google Colab notebook (`gitskills_full_colab.ipynb`) that downloads the Parquet mirror and runs the same analyses with DuckDB.
 
@@ -26,18 +26,19 @@ The sample database (277 MB) is not included here. To reproduce: clone the sampl
 
 Run order: `python size_metrics.py`, `python plots.py`, `python traceability.py` (needs pandas, matplotlib, langdetect), then the queries in `queries.sql`.
 
-## Results so far (sample only)
+## Results (full data, Colab run)
 
-- 74% of distinct skill contents appear exactly once. About 1.5% of repos hold 45% of all occurrences.
-- About 10% of distinct skills bundle scripts (`has_scripts`), 9.5% when root-level skills are excluded.
-- Skills that bundle scripts are about twice as likely to be among the widely spread ones (10+ repos): 1.4% vs 2.8% when large collection repos are excluded (OR about 2, held at every cutoff tried). This is an association, not a causal claim.
-- The broader "spreads more or less overall" comparison changes direction depending on whether large collection repos are included, so it is treated as exploratory.
+- 3,797,117 skill files, 1,877,981 distinct contents, 282,200 repos. 79.3% of distinct contents appear once, 312 repos hold 36.7% of all skill files.
+- 11.4% of skills bundle scripts (10.7% excluding root-level skills), 25.9% bundle reference files.
+- Skills that bundle scripts are only weakly more likely to be widely spread (10+ repos): 0.81% vs 0.70% outside collection repos, odds ratio 1.15 (95% CI 1.08 to 1.23). The effect is not stable across collection-repo cutoffs.
+- Collection repos (100+ skill files) hold about three quarters of the copies of widely spread skills, with or without scripts.
+- An earlier sample-only run suggested an odds ratio near 2. The full data does not support that. See notes.md.
 
 ## Limitations
 
-- Sample only so far, repo sizes in the sample are thinned. Numbers to be rerun on the full data with the Colab notebook.
+- The write-up and plots use the full data. The scripts in this repo run on the 13,000-skill sample, the Colab notebook runs on everything.
 - Copies are exact-hash copies only, lightly edited copies are not counted.
 - Folder composition (`has_scripts`, siblings) describes the representative copy's repository only.
 - The `has_scripts` flag is narrower than a file-extension definition of script (71 skills in the sample differ).
 - Language detection on short or mixed text is noisy.
-- The "large repo" cutoff is arbitrary. On the sample the widely-spread result held at every cutoff tried, the "2+ repos" result did not (see notes.md).
+- The collection-repo cutoff is arbitrary, and the result depends on it (see notes.md).

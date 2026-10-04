@@ -1,0 +1,31 @@
+n_repos,copies,name,location_class,sibling_count,descr
+781,1176,webapp-testing,canonical,5,Toolkit for interacting with and testing local web applications using 
+661,1409,pdf,canonical,11,"Comprehensive PDF manipulation toolkit for extracting text and tables,"
+656,885,systematic-debugging,canonical,10,"Use when encountering any bug, test failure, or unexpected behavior, b"
+564,719,pptx,canonical,59,Use this skill any time a .pptx file is involved in any way — as input
+555,745,mcp-builder,canonical,10,Guide for creating high-quality MCP (Model Context Protocol) servers t
+554,737,xlsx,canonical,54,Use this skill any time a spreadsheet file is the primary input or out
+532,663,skill-creator,canonical,19,"Create new skills, modify and improve existing skills, and measure ski"
+493,633,pdf,canonical,11,Use this skill whenever the user wants to do anything with PDF files. 
+472,598,docx,canonical,111,"Use this skill whenever the user wants to create, read, edit, or manip"
+469,647,slack-gif-creator,canonical,6,Knowledge and utilities for creating animated GIFs optimized for Slack
+458,614,algorithmic-art,canonical,4,Creating algorithmic art using p5.js with seeded randomness and intera
+451,708,xlsx,canonical,3,"Comprehensive spreadsheet creation, editing, and analysis with support"
+415,508,brainstorming,canonical,7,"You MUST use this before any creative work - creating features, buildi"
+391,591,pptx,canonical,56,"Presentation creation, editing, and analysis. When Claude needs to wor"
+390,594,skill-creator,canonical,10,Guide for creating effective skills. This skill should be used when us
+367,495,ui-ux-pro-max,canonical,34,"UI/UX design intelligence for web and mobile. Includes 50+ styles, 161"
+367,556,docx,canonical,59,"Comprehensive document creation, editing, and analysis with support fo"
+358,452,writing-skills,canonical,6,"Use when creating new skills, editing existing skills, or verifying sk"
+294,341,diagnose,canonical,1,Disciplined diagnosis loop for hard bugs and performance regressions. 
+219,331,skill-creator,canonical,4,Guide for creating effective skills. This skill should be used when us
+212,254,ckm:ui-styling,canonical,97,"Create beautiful, accessible user interfaces with shadcn/ui components"
+212,252,ckm:design-system,canonical,25,"Token architecture, component specifications, and slide generation. Th"
+211,709,skill-installer,canonical,7,Install Codex skills into $CODEX_HOME/skills from a curated list or a 
+206,243,ckm:design,canonical,34,"Comprehensive design skill: brand identity, design tokens, UI styling,"
+201,241,vulnerability-scanner,canonical,2,"Advanced vulnerability analysis principles. OWASP 2025, Supply Chain S"
+199,255,api-patterns,canonical,11,API design principles and decision-making. REST vs GraphQL vs tRPC sel
+197,289,skill-creator,canonical,8,Guide for creating effective skills. This skill should be used when us
+196,322,mcp-builder,canonical,9,Guide for creating high-quality MCP (Model Context Protocol) servers t
+193,245,mobile-design,canonical,13,Mobile-first design thinking and decision-making for iOS and Android a
+190,231,skill-creator,canonical,16,"Create new skills, modify and improve existing skills, and measure ski"
