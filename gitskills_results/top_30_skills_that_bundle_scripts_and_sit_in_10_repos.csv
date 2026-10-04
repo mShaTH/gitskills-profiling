@@ -19,8 +19,8 @@ n_repos,copies,name,location_class,sibling_count,descr
 358,452,writing-skills,canonical,6,"Use when creating new skills, editing existing skills, or verifying sk"
 294,341,diagnose,canonical,1,Disciplined diagnosis loop for hard bugs and performance regressions. 
 219,331,skill-creator,canonical,4,Guide for creating effective skills. This skill should be used when us
-212,254,ckm:ui-styling,canonical,97,"Create beautiful, accessible user interfaces with shadcn/ui components"
 212,252,ckm:design-system,canonical,25,"Token architecture, component specifications, and slide generation. Th"
+212,254,ckm:ui-styling,canonical,97,"Create beautiful, accessible user interfaces with shadcn/ui components"
 211,709,skill-installer,canonical,7,Install Codex skills into $CODEX_HOME/skills from a curated list or a 
 206,243,ckm:design,canonical,34,"Comprehensive design skill: brand identity, design tokens, UI styling,"
 201,241,vulnerability-scanner,canonical,2,"Advanced vulnerability analysis principles. OWASP 2025, Supply Chain S"

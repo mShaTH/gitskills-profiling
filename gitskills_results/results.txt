@@ -227,6 +227,7 @@ raw.githubusercontent.com     412
            img.shields.io      64
      fonts.googleapis.com      64
          en.wikipedia.org      63
+skills mentioning both w3id.org and edamontology.org: 324 | w3id.org alone: 329 | edamontology.org alone: 324
 
 ### natural language of skills (first 20,000 of the text sample, noisy on short text)
  lang  skills  pct
@@ -312,8 +313,8 @@ Caution: skills cluster inside repos, so these p-values assume more independence
      358     452        writing-skills      canonical              6 Use when creating new skills, editing existing skills, or verifying sk
      294     341              diagnose      canonical              1 Disciplined diagnosis loop for hard bugs and performance regressions. 
      219     331         skill-creator      canonical              4 Guide for creating effective skills. This skill should be used when us
-     212     254        ckm:ui-styling      canonical             97 Create beautiful, accessible user interfaces with shadcn/ui components
      212     252     ckm:design-system      canonical             25 Token architecture, component specifications, and slide generation. Th
+     212     254        ckm:ui-styling      canonical             97 Create beautiful, accessible user interfaces with shadcn/ui components
      211     709       skill-installer      canonical              7 Install Codex skills into $CODEX_HOME/skills from a curated list or a 
      206     243            ckm:design      canonical             34 Comprehensive design skill: brand identity, design tokens, UI styling,
      201     241 vulnerability-scanner      canonical              2 Advanced vulnerability analysis principles. OWASP 2025, Supply Chain S
@@ -359,3 +360,59 @@ skill_files_in_repo  repos  occurrences  pct_of_occurrences
              21-100  17396       690875                18.2
            101-1000   3064       774417                20.4
               1001+    312      1392618                36.7
+
+===== STEP 7: CLONE FAMILY OF mukul975/Anthropic-Cybersecurity-Skills =====
+distinct contents in the source repo: 790
+repos sharing at least half of the source's contents: 17 | of those, created after the source: 13 | source created: 2026-02-25T09:47:50Z
+
+### top 25 repos sharing most of the source collection
+                                                                    repo_full_name  shared  files_in_repo  pct_of_source           created_at  stars
+costrict-plugins-repo/mukul975-anthropic-cybersecurity-skills-cybersecurity-skills     783            785           99.1 2026-05-19T12:59:49Z     43
+                                                gabrielmoreira/agent-skills-mirror     725          60655           91.8 2026-03-23T13:19:25Z     11
+                                                             seikaikyo/dash-skills     708            952           89.6 2026-01-16T02:46:53Z      1
+                                                 SUEYTAME/claude-skills-collection     708            815           89.6 2026-06-12T12:45:07Z      0
+                                                           HaqiKuy470/Arshaka_Crew     707           2420           89.5 2026-06-20T04:45:01Z      0
+                                                               aristocratte/LEA2.0     696            734           88.1 2026-02-20T21:04:18Z      1
+                                                   fazzilka/deploy_pp_time_traking     672            680           85.1 2026-06-03T06:45:35Z      0
+                                                            Mahesh-07-404/Redforge     664            664           84.1 2026-06-07T17:37:29Z      1
+                                                                     hironow/cyber     662            700           83.8 2026-06-01T21:25:50Z      0
+                                                            kaviyarasu2007/Master_     640            721           81.0 2026-06-19T06:33:32Z      2
+                                                       megawesley2015-lang/Sos-Pet     615           1338           77.8 2026-04-26T18:19:13Z      0
+                                                         WorkNFlow/security-skills     588            677           74.4 2026-07-07T15:25:53Z      0
+                                                             ogiboy/agentic-trader     583            674           73.8 2026-03-31T02:31:37Z      0
+                                                              ogiboy/portfolio-app     581            686           73.5 2024-02-01T19:31:39Z      0
+                                                             26zl/cybersec-toolkit     577            791           73.0 2026-02-11T03:27:56Z     28
+                                                       henriquescastilho/my-claude     572           1603           72.4 2026-03-18T23:41:53Z      1
+                                                          WorkNFlow/ai-coffee-shop     424            513           53.7 2026-07-15T14:16:34Z      0
+
+===== STEP 8: COMMITS, AUTHORS AND LINKS =====
+
+### commits per skill file (skills with history)
+    variable  count  mean  median  std  variance  min  q25  q75  max  skew  kurtosis
+commit_count 458548  2.23     1.0 5.77      33.3    1  1.0  2.0  708 27.67   1316.82
+
+### type of the first-commit author
+          author_type  skills
+                 User  390917
+                        62831
+                  Bot    4643
+         Organization     153
+            Mannequin       3
+ProgrammaticAccessBot       1
+
+### skills per first-commit author
+         variable  count  mean  median   std  variance  min  q25  q75   max   skew  kurtosis
+skills per author  92395  4.96     2.0 55.67   3098.74    1  1.0  4.0 12254 148.11  28663.46
+the 10 most active first-commit authors hold 8.6 % of the skills with history
+
+### does SKILL.md name its own bundled files? (text sample, nested skills)
+                                         group  skills  pct_naming_at_least_one_file  pct_of_bundled_files_named
+                   skills with 1+ bundled file   16489                          64.3                        39.7
+skills with 1+ script file (script files only)    5112                          70.5                        36.6
+
+### kinds of GitHub links (text sample)
+                 link type  skills  pct_of_sample
+       any github.com link    5135           10.9
+     issue or pull request     159            0.3
+file or folder (blob/tree)     900            1.9
+                  raw file     414            0.9

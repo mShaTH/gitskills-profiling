@@ -1,0 +1,2 @@
+variable,count,mean,median,std,variance,min,q25,q75,max,skew,kurtosis
+skills per author,92395,4.96,2.0,55.67,3098.74,1,1.0,4.0,12254,148.11,28663.46

@@ -1,0 +1,2 @@
+variable,count,mean,median,std,variance,min,q25,q75,max,skew,kurtosis
+commit_count,458548,2.23,1.0,5.77,33.3,1,1.0,2.0,708,27.67,1316.82

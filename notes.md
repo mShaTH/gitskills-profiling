@@ -30,8 +30,16 @@ Reading:
 - The sample claim "script skills are about 2x as likely to be widely spread" does NOT hold on the full data. Sample numbers overstated it.
 - Collections dominate: 75.1% (no scripts) and 73.5% (scripts) of the copies of widely spread skills sit in repos with 100+ skill files. The sample guess that script skills spread less through collections was wrong.
 - Widely spread script skills: webapp-testing (781 repos), several pdf/pptx/xlsx/docx variants, systematic-debugging, mcp-builder, skill-creator, slack-gif-creator, algorithmic-art. Many look like Anthropic's example skills (source not checked).
-- 13 of the top 20 repos holding these skills have 664 to 952 files and hold 573 to 674 of them, matching mukul975/Anthropic-Cybersecurity-Skills (790 files, 674 of them). Looks like one collection cloned wholesale. NOT verified. The optional Step 7 cell in the notebook checks content overlap and creation dates.
+- 13 of the top 20 repos holding these skills have 664 to 952 files and hold 573 to 674 of them, matching mukul975/Anthropic-Cybersecurity-Skills (790 files).
+- Step 7 checked it by content: 17 other repos hold at least half of that collection's 790 skills, 16 of them hold 72% to 99% (costrict-plugins-repo/... holds 783 of 790). 13 of the 17 were created after the source repo (2026-02-25), 4 before it (seikaikyo/dash-skills 2026-01-16, 26zl/cybersec-toolkit 2026-02-11, aristocratte/LEA2.0 2026-02-20, ogiboy/portfolio-app 2024-02-01), so the source may not be the original, and repo creation date is not the date the skills were added. 14 of the 17 have 2 stars or fewer.
+- w3id.org and edamontology.org: 324 skills mention both (329 mention w3id.org), so one copied template.
 - p-values are optimistic (skills cluster in repos, millions of rows), so report odds ratios and CIs only.
+
+### Step 8 (full data): commits, authors, links
+- Commits per skill file (458,548 skills with history): mean 2.23, median 1, variance 33.3, max 708. First-commit author type: User 85.3%, Bot 1.0% (4,643), no type 13.7%.
+- Skills per first-commit author (92,395 authors): mean 4.96, median 2, variance 3,099, max 12,254. Top 10 authors hold 8.6% of skills with history.
+- Does SKILL.md name its own bundled files (text sample, nested): 64.3% of 16,489 skills name at least one bundled file, 39.7% of bundled files are named. Skills with script files (5,112): 70.5% name at least one script, 36.6% of script files named. Plain file-name text match, misses folder mentions.
+- GitHub links (text sample 47,160): 10.9% any github.com/, 1.9% file or folder, 0.9% raw file, 0.3% issue or PR.
 
 Everything below is the earlier SAMPLE work. Where it conflicts with the section above, the full data wins.
 
@@ -141,10 +149,9 @@ Full run done. Remaining TODO:
 - [ ] Main comparison table, all settings
 - [ ] Widely spread script skills, which repos hold them, % of copies in collection repos
 - [ ] Cleaned URL domains, language mix (spot-checked by hand), over-time plot
-- [ ] Run Step 8 in the notebook (commits per skill, authors, does SKILL.md name its own bundled files, kinds of GitHub links) and add the numbers to the report (rubric asks for commits, authors and traceability)
 - [ ] Open the top collection repos and a few widely spread script skills, read what the scripts do
 
-## Questions for Abram
+## Questions
 - Is "scripts and how widely skills spread" the slice you want me to focus on?
 - Do you know the rule behind `has_scripts`, or should I ask the dataset authors?
 - When do you want the PDF report, and in what format?
