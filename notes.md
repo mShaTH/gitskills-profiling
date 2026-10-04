@@ -141,6 +141,7 @@ Full run done. Remaining TODO:
 - [ ] Main comparison table, all settings
 - [ ] Widely spread script skills, which repos hold them, % of copies in collection repos
 - [ ] Cleaned URL domains, language mix (spot-checked by hand), over-time plot
+- [ ] Run Step 8 in the notebook (commits per skill, authors, does SKILL.md name its own bundled files, kinds of GitHub links) and add the numbers to the report (rubric asks for commits, authors and traceability)
 - [ ] Open the top collection repos and a few widely spread script skills, read what the scripts do
 
 ## Questions for Abram
