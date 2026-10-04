@@ -1,6 +1,6 @@
 # GitSkills profiling (sample)
 
-Exploratory profiling of the GitSkills dataset (agent skills mined from GitHub, MSR 2027 Mining Challenge). This follows the structure of Abram Hindle's CMPUT 660 Assignment 1, adapted to the new dataset. Everything here was built on the 13,000-skill sample. The rerun on the full dataset is still to do.
+Exploratory profiling of the GitSkills dataset (agent skills mined from GitHub, MSR 2027 Mining Challenge). This follows the structure of Abram Hindle's CMPUT 660 Assignment 1, adapted to the new dataset. The scripts here were built on the 13,000-skill sample. The full-data rerun is a Google Colab notebook (`gitskills_full_colab.ipynb`) that downloads the Parquet mirror and runs the same analyses with DuckDB.
 
 ## Data
 
@@ -16,6 +16,7 @@ The sample database (277 MB) is not included here. To reproduce: clone the sampl
 
 | File | What it does |
 |---|---|
+| `gitskills_full_colab.ipynb` | Full-data run on Google Colab (Steps 3 to 6), writes results.txt, CSVs and plots |
 | `queries.sql` | All SQL used (counts, scripts vs spread, robustness checks) |
 | `size_metrics.py` | Step 3: size and summary statistics, vocabulary |
 | `plots.py` | Step 4: distributions and plots into `my_plots/` |
@@ -29,14 +30,14 @@ Run order: `python size_metrics.py`, `python plots.py`, `python traceability.py`
 
 - 74% of distinct skill contents appear exactly once. About 1.5% of repos hold 45% of all occurrences.
 - About 10% of distinct skills bundle scripts (`has_scripts`), 9.5% when root-level skills are excluded.
-- Skills that bundle scripts are about twice as likely to be among the widely spread ones (10+ repos): 1.4% vs 2.8% when large collection repos are excluded (Fisher p about 0.001). This is an association, not a causal claim.
+- Skills that bundle scripts are about twice as likely to be among the widely spread ones (10+ repos): 1.4% vs 2.8% when large collection repos are excluded (OR about 2, held at every cutoff tried). This is an association, not a causal claim.
 - The broader "spreads more or less overall" comparison changes direction depending on whether large collection repos are included, so it is treated as exploratory.
 
 ## Limitations
 
-- Sample only, repo sizes in the sample are thinned. Numbers to be rerun on the full data.
+- Sample only so far, repo sizes in the sample are thinned. Numbers to be rerun on the full data with the Colab notebook.
 - Copies are exact-hash copies only, lightly edited copies are not counted.
 - Folder composition (`has_scripts`, siblings) describes the representative copy's repository only.
 - The `has_scripts` flag is narrower than a file-extension definition of script (71 skills in the sample differ).
 - Language detection on short or mixed text is noisy.
-- The "large repo" cutoff (more than 10 sampled occurrences) is arbitrary, sensitivity check pending.
+- The "large repo" cutoff is arbitrary. On the sample the widely-spread result held at every cutoff tried, the "2+ repos" result did not (see notes.md).
