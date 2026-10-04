@@ -1,0 +1,109 @@
+  skipped_reason      n
+0         (none)  39046
+bundled files with text: 22278
+ext
+.md           19251
+.py            4261
+.json          2662
+.mdx            991
+.js             963
+.ts             930
+.sh             915
+.png            817
+(none)          770
+.yaml           744
+.go             668
+.html           459
+.txt            425
+.mjs            414
+.tsx            350
+.csv            251
+.ex             236
+.ttf            222
+.yml            213
+.svg            203
+.xsd            195
+.java           184
+.gitignore      167
+.context        131
+.css            125
+Name: count, dtype: int64
+
+skills with at least one script file: 1398
+number of script languages per skill:
+ plang
+1    1214
+2     151
+3      28
+4       4
+5       1
+Name: count, dtype: int64
+plang
+Python        4261
+JavaScript    1463
+TypeScript     930
+Shell          915
+Go             668
+Java           184
+PowerShell     116
+Rust            39
+Batch           10
+PHP              6
+Lua              2
+Name: count, dtype: int64
+
+skills with 1+ URL: 3573 of 13000 | total URLs: 18561
+top domains (number of skills mentioning each):
+  1300 github.com
+  225 example.com
+  94 localhost:3000
+  84 raw.githubusercontent.com
+  81 w3id.org
+  80 edamontology.org
+  76 api.example.com
+  66 ...
+  60 rube.app
+  53 arxiv.org
+  53 learn.microsoft.com
+  45 localhost:8080
+  42 composio.dev
+  31 x.com
+  31 www.npmjs.com
+  30 localhost:8000
+  29 api.github.com
+  29 attack.mitre.org
+  28 www.w3.org
+  28 getmembrane.com
+
+natural language of skills:
+ lang
+en       11747
+zh-cn      216
+de         179
+ja         148
+pt         116
+no          95
+es          84
+vi          80
+ko          78
+fr          63
+ca          50
+ru          33
+tr          19
+sv          15
+it          14
+Name: count, dtype: int64
+
+first commits before 2025-10 (before the spec): 2 of 2955
+ym
+2025-10     12
+2025-11     12
+2025-12     34
+2026-01    130
+2026-02    305
+2026-03    477
+2026-04    544
+2026-05    535
+2026-06    629
+2026-07    275
+Name: count, dtype: int64

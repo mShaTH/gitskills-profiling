@@ -1,0 +1,15 @@
+count    13000.000000
+mean         2.291231
+std          6.397874
+min          1.000000
+25%          1.000000
+50%          1.000000
+75%          2.000000
+max        188.000000
+Name: copies, dtype: float64
+singletons %: 74.0
+max copies: 188
+share of all occurrences held by top 1% of contents %: 22.3
+zero-length bodies: 1
+zero-byte bundled files: 180
+repos with 0 stars %: 54.3

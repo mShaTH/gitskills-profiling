@@ -1,0 +1,26 @@
+
+body_chars, distinct skills
+count     13000.000000
+mean       6815.793231
+std        8466.101705
+min           0.000000
+25%        2088.750000
+50%        4493.000000
+75%        8614.500000
+max      211535.000000
+Name: body_chars, dtype: float64
+variance 71674878.07386759 skew 5.3409650200109615 kurtosis 61.416315622988634
+
+entry_size, bundled files
+count    3.904600e+04
+mean     2.863504e+04
+std      4.512063e+05
+min      0.000000e+00
+25%      1.275000e+03
+50%      3.562500e+03
+75%      8.593750e+03
+max      5.068481e+07
+Name: entry_size, dtype: float64
+variance 203587167289.29593 skew 60.60947962797012 kurtosis 5193.151589025433
+
+unique tokens 414477 | total tokens 12317471 | total lines 2391080
